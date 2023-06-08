@@ -6,9 +6,6 @@ import { Price, Product } from '@/types';
 
 import { stripe } from './stripe';
 import { toDateTime } from './helpers';
-import { Are_You_Serious } from 'next/font/google';
-import { metadata } from '../app/layout';
-import { supabase } from '@supabase/auth-ui-shared';
 
 export const supabaseAdmin = createClient<Database>(
   process.env.NEXT_PUBLIC_SUPABASE_URL || '',

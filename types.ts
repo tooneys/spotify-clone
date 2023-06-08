@@ -40,7 +40,7 @@ export interface Price {
   interval_count?: number;
   trial_period_days?: number | null;
   metadata?: Stripe.Metadata;
-  Products?: Product;
+  products?: Product;
 }
 
 export interface ProductWithPrice extends Product {
